@@ -1,0 +1,16 @@
+<%- include('./nav') %>
+
+<div id="AddQuote">
+    <% for (let item of quotesD) { %>
+        <div class="small">
+            <div>
+                <h1><%= item.quote %></h1>
+                <p><%= item.name %></p>
+            </div>
+        <button class="btn"><a href="/Fullquote/<%=item._id%>">Show Full Quote</a></button>
+        </div>
+   <% } %>
+</div>
+
+</body>
+</html>
