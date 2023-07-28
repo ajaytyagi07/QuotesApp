@@ -7,7 +7,7 @@ app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'/views'));
 app.use(express.static(path.join(__dirname,'/public')));
 app.use(express.urlencoded({extended:true}));
-mongoose.connect('mongodb://127.0.0.1:27017/quote').
+mongoose.connect('mongodb+srv://ajaytyagi07:5pzXjDA73isfZLAe@cluster0.e0btcvh.mongodb.net/?retryWrites=true&w=majority').
 then(()=>{
     console.log('DB CONNECTED');})
 .catch((err)=>{
